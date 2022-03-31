@@ -1,0 +1,37 @@
+var frutas = [];
+var laticinios = [];
+var congelados = [];
+var doces = [];
+
+var pergunta1 = prompt("Quer adicionar um produto à  lista? Se sim, qual? Se não, apenas clice em OK");
+
+while(pergunta1 != ""){
+  var pergunta2 = prompt("Em qual das categorias a seguir esse produto se encaixa? Frutas, Laticínios, Congelados ou Doces?");
+  pergunta1 = prompt("Quer adicionar um produto à  lista? Se sim, qual? Se não, apenas clice em OK");
+  
+  if (pergunta2 == "Frutas") {
+    frutas.push(pergunta1)
+    
+    var adicionaFruta = document.querySelector(".frutas")
+    adicionaFruta.innerHTML = frutas
+    
+  } else if (pergunta2 == "Laticínios") {
+      laticinios.push(pergunta1)
+    
+      var adicionaLaticinio = document.querySelector(".laticinios")
+      adicionaLaticinio.innerHTML = laticinios
+      
+    } else if (pergunta2 == "Congelados") {
+        congelados.push(pergunta1)
+      
+        var adicionaCongelado = document.querySelector(".congelados")
+        adicionaCongelado.innerHTML = congelados
+        
+      } else if (pergunta2 == "Doces") {
+         doces.push(pergunta1)
+        
+         var adicionaDoce = document.querySelector(".doces")
+         adicionaDoce.innerHTML = doces
+        }
+}
+
